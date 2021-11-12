@@ -1,0 +1,25 @@
+.card{
+    display: inline-block;
+    position: relative;
+    width: 350px;
+    height: 210px;
+    margin-right:1rem;
+    margin-bottom: 1rem;
+}
+.card a{
+    background: black;
+    color: #FFFFFF;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.5rem 0.5rem;
+    transition: .5s;
+}
+.card a:hover{
+    box-shadow: 0 0 5px 1px;
+}
+.card img{
+    width: 350px;
+    height: 210px;
+    opacity: 60%;
+}

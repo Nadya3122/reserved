@@ -1,0 +1,18 @@
+.filter{
+    margin-left: 8rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    color: #454343;
+}
+.filter button{
+    color: #FFFFFF;
+    width: 5rem;
+    max-height: 2.5rem;
+    background: #9E162F;
+    border-radius: 100px;
+    transition: .5s;
+}
+.filter button:hover{
+    box-shadow: 0 0 5px 1px;
+}

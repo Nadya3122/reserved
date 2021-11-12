@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import MainPage from "./components/MainPage/MainPage";
+import LogIn from "./components/LogIn/LogIn";
+import {BrowserRouter as Router, useRoutes,} from 'react-router-dom';
+import Registration from "./components/Registration/Registration";
+import Catalog from "./components/Catalog/Catalog";
+import Booking from "./components/Booking/Booking";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return useRoutes([
+        {path: "/", element: <MainPage/>},
+        {path: "login", element: <LogIn/>},
+        {path: "registration", element: <Registration/>},
+        {path: "catalog", element: <Catalog/>},
+        {path: "booking", element: <Booking/>}
+        // ...
+    ]);
+};
 
-export default App;
+const AppWrapper = () => {
+    return (
+        <Router>
+            <App />
+        </Router>
+    );
+};
+
+export default AppWrapper;

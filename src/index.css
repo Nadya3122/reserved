@@ -1,10 +1,21 @@
 body {
+  background: url("./main-back.png") no-repeat right, linear-gradient(to right, #231C19, #594037);
+  background-size: auto 100%;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: #FFFFFF;
+}
+a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.container{
+  padding: 0;
+  margin: 0;
+  max-width: 1110px;
+  height: 100vh;
+  box-sizing: content-box;
+  flex-wrap: wrap;
 }
 
 code {

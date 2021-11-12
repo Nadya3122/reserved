@@ -1,0 +1,23 @@
+.fill{
+    margin-left: 30rem;
+    margin-top: 6rem;
+}
+.reg_form{
+    margin-top: 0;
+}
+.in{
+    margin-bottom: 0.5rem ;
+}
+.button_reg{
+    margin-left: 6.5rem;
+    color: white;
+    width: 90px;
+    background-color: #9E162F;
+    border-radius: 100px;
+    padding: 2px 7px;
+    transition: .5s;
+}
+.button_reg:hover{
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0 5px 1px;
+}
