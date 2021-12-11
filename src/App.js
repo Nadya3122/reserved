@@ -1,11 +1,11 @@
 import React from "react";
 import './App.css';
-import MainPage from "./components/MainPage/MainPage";
-import LogIn from "./components/LogIn/LogIn";
+import MainPage from "./Pages/MainPage/MainPage";
+import LogIn from "./Pages/LogIn/LogIn";
 import {BrowserRouter as Router, useRoutes,} from 'react-router-dom';
-import Registration from "./components/Registration/Registration";
-import Catalog from "./components/Catalog/Catalog";
-import Booking from "./components/Booking/Booking";
+import Registration from "./Pages/Registration/Registration";
+import Catalog from "./Pages/Catalog/Catalog";
+import Booking from "./Pages/Booking/Booking";
 
 const App = () => {
     return useRoutes([

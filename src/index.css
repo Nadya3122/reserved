@@ -1,9 +1,11 @@
 body {
-  background: url("./main-back.png") no-repeat right, linear-gradient(to right, #231C19, #594037);
-  background-size: auto 100%;
   padding: 0;
   margin: 0;
   color: #FFFFFF;
+  background: url("./main-back.png") no-repeat fixed right, #231C19;
+  /*background: url("./main-back.png") no-repeat fixed right, linear-gradient(to right, #231C19, #594037);*/
+  background-size: auto 100%;
+  font-family: 'Federo', sans-serif;
 }
 a{
   color: #FFFFFF;
@@ -21,4 +23,8 @@ a{
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+Button{
+  border: none;
+  outline: none;
 }

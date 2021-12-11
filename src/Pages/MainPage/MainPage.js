@@ -1,7 +1,7 @@
 import React from "react";
 import './MainPage.css';
-import ButtonCatalog from "../ButtonCatalog/ButtonCatalog";
-import Header1 from "../Headers/Header1";
+import MyButton from "../../components/UI/Button/MyButton";
+import Header1 from "../../components/Headers/Header1";
 
 const MainPage = () => {
     return(
@@ -9,7 +9,8 @@ const MainPage = () => {
             <Header1/>
             <h1>reserve</h1>
             <p>Convenient platform for booking tables in restaurants. Choose a place, time and desired table. </p>
-            <ButtonCatalog/>
+            <a href="/catalog"><MyButton style={{marginLeft: '15rem'}}>Catalog</MyButton></a>
+
         </div>
     )
 }

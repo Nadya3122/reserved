@@ -1,15 +1,17 @@
 import React from 'react';
 import './Form.css'
+import MyInput from "../UI/Input/MyInput";
+import MyButton from "../UI/Button/MyButton";
 
 const Form = () => {
     return (
         <div className="book">
             <form action="">
-                <input placeholder="Time from" type="time" name="Time_from" value=""/>
+                <MyInput placeholder="Time from" type="time" name="Time_from"/>
                 <br/>
-                <input placeholder="Time to" type="time" name="Time_to" value=""/>
+                <MyInput placeholder="Time to" type="time" name="Time_to"/>
                 <br/>
-                <button className="book_btn" type="submit" name="login">Sent</button>
+                <MyButton style={{fontSize:'14px'}} type="submit" name="login">Sent</MyButton>
             </form>
         </div>
     );
