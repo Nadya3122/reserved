@@ -1,0 +1,17 @@
+.Inf .Book{
+    display: inline-block;
+    position: relative;
+    width: 600px;
+    box-sizing: border-box;
+}
+
+.Inf{
+    margin-top: 8rem;
+    margin-left: 18rem;
+}
+.Book{
+    margin-top: -23rem;
+    position: absolute;
+    right: 5rem;
+}
+

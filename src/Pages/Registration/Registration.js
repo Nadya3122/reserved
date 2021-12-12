@@ -1,17 +1,17 @@
 import React from 'react';
-import Header3 from "../../components/Headers/Header3";
-import './Registration.css'
+import style from './Registration.module.css'
 import MyInput from "../../components/UI/Input/MyInput";
 import MyButton from "../../components/UI/Button/MyButton";
+import Header from "../../components/Headers/Header";
 
 const Registration = () => {
     return (
         <div>
-            <Header3/>
-            <div className="fill">
+            <Header/>
+            <div className={style.fill}>
                 <h2>Fill in the following fields</h2>
             </div>
-            <form className="reg_form" action="">
+            <form className={style.reg_form} action="">
                 <MyInput placeholder="name" type="text" name="name" />
                 <br/>
                 <MyInput placeholder="phone" type="tel" name="phone" />

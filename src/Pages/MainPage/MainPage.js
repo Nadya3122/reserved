@@ -1,15 +1,16 @@
 import React from "react";
-import './MainPage.css';
+import style from './MainPage.module.css';
 import MyButton from "../../components/UI/Button/MyButton";
-import Header1 from "../../components/Headers/Header1";
+import Header from "../../components/Headers/Header";
+import {Link} from "react-router-dom";
 
 const MainPage = () => {
     return(
         <div>
-            <Header1/>
-            <h1>reserve</h1>
-            <p>Convenient platform for booking tables in restaurants. Choose a place, time and desired table. </p>
-            <a href="/catalog"><MyButton style={{marginLeft: '15rem'}}>Catalog</MyButton></a>
+            <Header/>
+            <h1 className={style.title}>reserve</h1>
+            <p className={style.description}>Convenient platform for booking tables in restaurants. Choose a place, time and desired table. </p>
+            <Link to="/catalog"><MyButton style={{marginLeft: '15rem'}}>Catalog</MyButton></Link>
 
         </div>
     )

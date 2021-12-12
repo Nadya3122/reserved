@@ -1,13 +1,13 @@
 import React from 'react';
-import Filter from "../../components/Filter/Filter";
-import Item from "../../components/Items_r/Item";
-import Header1 from "../../components/Headers/Header1";
+import Filter from "../components/Filter/Filter";
+import Item from "../components/Items_r/Item";
+import Header from "../components/Headers/Header";
 
 
 const Catalog = () => {
     return (
         <div>
-            <Header1/>
+            <Header/>
             <Filter/>
             <Item/>
             <Item/>

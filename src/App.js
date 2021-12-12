@@ -1,29 +1,40 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import './App.css';
-import MainPage from "./Pages/MainPage/MainPage";
-import LogIn from "./Pages/LogIn/LogIn";
-import {BrowserRouter as Router, useRoutes,} from 'react-router-dom';
-import Registration from "./Pages/Registration/Registration";
-import Catalog from "./Pages/Catalog/Catalog";
-import Booking from "./Pages/Booking/Booking";
+import {BrowserRouter} from 'react-router-dom';
+import {AuthContext} from "./components/context";
+import AppRouter from "./components/AppRouter";
 
-const App = () => {
-    return useRoutes([
-        {path: "/", element: <MainPage/>},
-        {path: "login", element: <LogIn/>},
-        {path: "registration", element: <Registration/>},
-        {path: "catalog", element: <Catalog/>},
-        {path: "booking", element: <Booking/>}
-        // ...
-    ]);
-};
+// const App = () => {
+//     return useRoutes([
+//         {path: "/", element: <MainPage/>},
+//         {path: "login", element: <LogIn/>},
+//         {path: "registration", element: <Registration/>},
+//         {path: "catalog", element: <Catalog/>},
+//         {path: "booking", element: <Booking/>}
+//     ]);
+// };
 
-const AppWrapper = () => {
+function App() {
+    const [isAuth, setIsAuth] = useState(false);
+
+
+    useEffect(()=>{
+        if(localStorage.getItem('auth')){
+            setIsAuth(true);
+            console.log(isAuth);
+        }
+    },[])
     return (
-        <Router>
-            <App />
-        </Router>
-    );
-};
+        <AuthContext.Provider value={{
+            isAuth,
+            setIsAuth
+        }}>
+            <BrowserRouter>
+                <AppRouter/>
+            </BrowserRouter>
+        </AuthContext.Provider>
 
-export default AppWrapper;
+    );
+}
+
+export default App;

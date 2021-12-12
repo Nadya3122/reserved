@@ -1,0 +1,16 @@
+.Category .BookingList{
+    display: inline-block;
+    position: relative;
+    width: 600px;
+    box-sizing: border-box;
+}
+
+.Category{
+    margin-left: 20rem;
+    margin-top: 10rem;
+}
+.BookingList{
+    margin-top: -15rem;
+    position: absolute;
+    right: 5rem;
+}
