@@ -1,13 +1,18 @@
 import React from 'react';
-import ex_photo from './ex_photo.png';
-import './Item.css'
-import {Link} from "react-router-dom";
+import './Item.modules.css';
+import {useNavigate} from "react-router-dom";
 
-const Item = () => {
+const Item = (props) => {
+
+    const navigate = useNavigate();
+    function click(){
+        navigate(`/catalog/${props.post.id}`);
+    }
     return (
         <div className="card">
-            <img src={ex_photo} alt="item"/>
-            <Link to="/booking">Restaurant</Link>
+            {/*<img src={props.post.picture} alt="item"/>*/}
+            <img src={process.env.PUBLIC_URL + "/img/"+props.post.picture + ".png"} alt="item"/>
+            <button className="cardName" onClick={click}>{props.post.name}</button>
         </div>
     );
 };

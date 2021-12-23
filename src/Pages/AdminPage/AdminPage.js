@@ -17,7 +17,7 @@ const AdminPage = () => {
                 <br/>
             </div>
             <div className={style.BookingList}>
-                <h3 >Booking List</h3>
+                <h3>Booking List</h3>
                 <ItemBookList/>
                 <ItemBookList/>
             </div>

@@ -7,16 +7,13 @@ import Header from "../../components/Headers/Header";
 
 const LogIn = () => {
     const {isAuth, setIsAuth} = useContext(AuthContext);
-    // const [isChecked, setIsChecked] = useState(false);
 
     const login = event =>{
         event.preventDefault();
         setIsAuth(true);
-        localStorage.setItem('auth','true');
+        // localStorage.setItem('auth','true');
     }
-    // const handleOnChange = () => {
-    //     setIsChecked(!isChecked);
-    // };
+
 
     return (
         <div>
@@ -33,13 +30,6 @@ const LogIn = () => {
                     type="password"
                     name="password"/>
                 <br/>
-                {/*<input*/}
-                {/*    type="checkbox"*/}
-                {/*    name="Admin"*/}
-                {/*    checked={isChecked}*/}
-                {/*    onChange={handleOnChange}/>*/}
-                {/*<label style={{fontSize:'14px'}}>Admin</label>*/}
-                {/*<br/>*/}
                 <MyButton style={{fontSize:'14px'}}>log in</MyButton>
             </form>
         </div>

@@ -10,6 +10,7 @@ import Account from "../Pages/Account/Account";
 
 const AppRouter = () => {
 
+
     const {isAuth} = useContext(AuthContext);
     return (
         isAuth
@@ -17,7 +18,7 @@ const AppRouter = () => {
             <Routes>
                 <Route path="*" element={<MainPage/>}/>
                 <Route exact path="/catalog" element={<Catalog/>}/>
-                <Route exact path="/booking" element={<Booking/>}/>
+                <Route exact path="/catalog/:id" element={<Booking/>}/>
                 <Route exact path="/account" element={<Account/>}/>
             </Routes>
             :

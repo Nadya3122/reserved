@@ -10,11 +10,15 @@ const Form = () => {
             <form action="">
                 <MyInput placeholder="date" type="date" name="date"/>
                 <br/>
+                <MyInput placeholder="number of persons" type="tel" name="number"/>
+                <br/>
+                <MyInput placeholder="table" type="tel" name="number"/>
+                <br/>
                 <MyInput placeholder="Time from" type="time" name="Time_from"/>
                 <br/>
                 <MyInput placeholder="Time to" type="time" name="Time_to"/>
                 <br/>
-                <MyButton style={{fontSize:'14px'}} type="submit" name="login">Sent</MyButton>
+                <MyButton style={{fontSize:'14px'}} type="submit" name="login">Send</MyButton>
             </form>
         </div>
     );

@@ -12,10 +12,3 @@ const MyButton = ({children, ...props}) =>{
 
 export default MyButton;
 
-
-// return (
-//     <div>
-//         {/*<MyButton className="catalog" href="/catalog" >View catalog</MyButton>*/}
-//         <a href="/catalog"><button className="catalog">View catalog</button></a>
-//     </div>
-// );
