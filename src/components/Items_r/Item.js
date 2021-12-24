@@ -11,7 +11,7 @@ const Item = (props) => {
     return (
         <div className="card">
             {/*<img src={props.post.picture} alt="item"/>*/}
-            <img src={process.env.PUBLIC_URL + "/img/"+props.post.picture + ".png"} alt="item"/>
+            <img style={{borderRadius:'20px'}} src={process.env.PUBLIC_URL + "/img/"+props.post.picture + ".png"} alt="item"/>
             <button className="cardName" onClick={click}>{props.post.name}</button>
         </div>
     );

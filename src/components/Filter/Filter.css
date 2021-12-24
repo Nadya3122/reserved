@@ -1,8 +1,9 @@
 .filter{
     margin-left: 8rem;
     margin-top: 4rem;
+    margin-bottom: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     color: #454343;
 }
 /*.filter button{*/

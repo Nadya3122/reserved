@@ -18,7 +18,7 @@ const ItemBook = () => {
     },[])
     return (
         <div className={style.ItemBook}>
-            {console.log(res.place_id)}
+            {/*{console.log(res.place_id)}*/}
             <p>Date: {res.begin_time}</p>
             <p>Table: {res.place_id}</p>
             <MyButton style={{display:'flex', position:'right', fontSize:'14px'}}>Cancle</MyButton>
